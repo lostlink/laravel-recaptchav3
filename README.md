@@ -42,12 +42,12 @@ Recaptcha v3 works best when it is loaded on every page to get the most context 
 
 #### Forms
 
-``RecaptchaV3::field($action, $name='g-recaptcha-response')`` creates an invisible input field that gets filled with a Recaptcha token on load.
+``RecaptchaV3::field($form, $action, $name='g-recaptcha-response')`` creates an invisible input field that gets filled with a Recaptcha token on form submit.
 
 
 ```html
-<form method="post" action="/register">
-    {!! RecaptchaV3::field('register') !!}
+<form name="register" method="post" action="/register">
+    {!! RecaptchaV3::field('register', 'register') !!}
     <input type="submit" value="Register"></input>
 </form>
 
