@@ -114,18 +114,23 @@ class RecaptchaV3
     /**
      * @param $action
      */
-    public function field($action, $name = 'g-recaptcha-response')
+    public function field($form, $action, $name = 'g-recaptcha-response')
     {
         $fieldId = uniqid($name . '-', false);
-        $html = '<input type="hidden" name="' . $name . '" id="' . $fieldId . '">';
-        $html .= "<script>
-  grecaptcha.ready(function() {
-      grecaptcha.execute('" . $this->sitekey . "', {action: '" . $action . "'}).then(function(token) {
-         document.getElementById('" . $fieldId . "').value = token;
-      });
-  });
-  </script>";
-        return $html;
+        return "
+            <input type=\"hidden\" name=\"{$name}\" id=\"{$fieldId}\">
+            <script>
+              grecaptcha.ready(function() {
+                  document.getElementById('{$form}').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    grecaptcha.execute('{$this->sitekey}', {action: '{$action}'}).then(function(token) {
+                       document.getElementById('{$fieldId}').value = token; 
+                       document.getElementById('{$form}').submit();
+                    });        
+                  }, false);
+              });
+            </script>
+        ";
     }
 
 
