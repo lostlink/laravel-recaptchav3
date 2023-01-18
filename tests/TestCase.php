@@ -5,9 +5,9 @@
  * Mail: josias@montag.info
  */
 
-namespace Lunaweb\RecaptchaV3\Tests;
+namespace Lostlink\RecaptchaV3\Tests;
 
-use Lunaweb\RecaptchaV3\Providers\RecaptchaV3ServiceProvider;
+use Lostlink\RecaptchaV3\Providers\RecaptchaV3ServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Mockery;
 use GuzzleHttp\Psr7\Response;

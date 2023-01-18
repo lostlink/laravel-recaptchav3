@@ -1,13 +1,17 @@
 {
-    "name": "josiasmontag/laravel-recaptchav3",
+    "name": "lostlink/laravel-recaptchav3",
     "description": "Recaptcha V3 for Laravel package",
     "keywords": ["captcha", "recaptcha", "laravel", "php"],
-    "homepage": "https://github.com/josiasmontag/laravel-recaptchav3",
+    "homepage": "https://github.com/lostlink/laravel-recaptchav3",
     "license": "MIT",
     "authors": [
         {
             "name": "Josias Montag",
             "email": "josias@montag.info"
+        },
+        {
+            "name": "Nuno Souto",
+            "email": "nsouto@lostlink.net"
         }
     ],
     "require": {
@@ -24,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Lunaweb\\RecaptchaV3\\": "src"
+            "Lostlink\\RecaptchaV3\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lunaweb\\RecaptchaV3\\Tests\\": "tests"
+            "Lostlink\\RecaptchaV3\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -38,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lunaweb\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
+                "Lostlink\\RecaptchaV3\\Providers\\RecaptchaV3ServiceProvider"
             ],
             "aliases": {
-                "RecaptchaV3": "Lunaweb\\RecaptchaV3\\Facades\\RecaptchaV3"
+                "RecaptchaV3": "Lostlink\\RecaptchaV3\\Facades\\RecaptchaV3"
             }
         }
     }

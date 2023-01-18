@@ -5,7 +5,7 @@
  * Mail: josias@montag.info
  */
 
-namespace Lunaweb\RecaptchaV3;
+namespace LostLink\RecaptchaV3;
 
 
 use GuzzleHttp\Client;

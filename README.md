@@ -2,10 +2,10 @@
 
 
 <p align="center">
-<a href="https://github.com/josiasmontag/laravel-recaptchav3/actions/workflows/run-tests.yml"><img src="https://github.com/josiasmontag/laravel-recaptchav3/actions/workflows/run-tests.yml/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/josiasmontag/laravel-recaptchav3"><img src="https://poser.pugx.org/josiasmontag/laravel-recaptchav3/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/josiasmontag/laravel-recaptchav3"><img src="https://poser.pugx.org/josiasmontag/laravel-recaptchav3/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/josiasmontag/laravel-recaptchav3"><img src="https://poser.pugx.org/josiasmontag/laravel-recaptchav3/license.svg" alt="License"></a>
+<a href="https://github.com/lostlink/laravel-recaptchav3/actions/workflows/run-tests.yml"><img src="https://github.com/lostlink/laravel-recaptchav3/actions/workflows/run-tests.yml/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/lostlink/laravel-recaptchav3"><img src="https://poser.pugx.org/lostlink/laravel-recaptchav3/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/lostlink/laravel-recaptchav3"><img src="https://poser.pugx.org/lostlink/laravel-recaptchav3/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/lostlink/laravel-recaptchav3"><img src="https://poser.pugx.org/lostlink/laravel-recaptchav3/license.svg" alt="License"></a>
 </p>
 
 Laravel package for Google's [Recaptcha V3](https://developers.google.com/recaptcha/docs/v3). This is a lightweight package which focuses on the backend validation of Recaptcha V3 captchas.
@@ -15,7 +15,7 @@ Laravel package for Google's [Recaptcha V3](https://developers.google.com/recapt
 
 To get started, use Composer to add the package to your project's dependencies:
 
-    composer require josiasmontag/laravel-recaptchav3
+    composer require lostlink/laravel-recaptchav3
 
 
 Add `RECAPTCHAV3_SITEKEY` and `RECAPTCHAV3_SECRET` to your `.env` file. (You can get them [here](https://www.google.com/recaptcha/admin#list))
@@ -27,7 +27,7 @@ RECAPTCHAV3_SECRET=secret
 
 Optionally, you can publish the config file:
 ```
-php artisan vendor:publish --provider="Lunaweb\RecaptchaV3\Providers\RecaptchaV3ServiceProvider"
+php artisan vendor:publish --provider="Lostlink\RecaptchaV3\Providers\RecaptchaV3ServiceProvider"
 ```
 
 ## Usage
@@ -69,7 +69,7 @@ Alternatively, you can get the score and take variable action:
 
 ```php
 // Import the facade class
-use Lunaweb\RecaptchaV3\Facades\RecaptchaV3;
+use Lostlink\RecaptchaV3\Facades\RecaptchaV3;
 //  RecaptchaV3::verify($token, $action)
 $score = RecaptchaV3::verify($request->get('g-recaptcha-response'), 'register')
 if($score > 0.7) {

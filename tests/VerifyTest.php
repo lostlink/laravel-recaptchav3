@@ -6,12 +6,12 @@
  */
 
 
-namespace Lunaweb\RecaptchaV3\Tests\Integration;
+namespace Lostlink\RecaptchaV3\Tests\Integration;
 
 
 
-use Lunaweb\RecaptchaV3\Facades\RecaptchaV3;
-use Lunaweb\RecaptchaV3\Tests\TestCase;
+use Lostlink\RecaptchaV3\Facades\RecaptchaV3;
+use Lostlink\RecaptchaV3\Tests\TestCase;
 
 
 
