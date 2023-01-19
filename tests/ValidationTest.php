@@ -5,10 +5,10 @@
  * Mail: josias@montag.info
  */
 
-namespace LostLink\RecaptchaV3\Tests;
+namespace Lostlink\RecaptchaV3\Tests;
 
 
-use LostLink\RecaptchaV3\Facades\RecaptchaV3;
+use Lostlink\RecaptchaV3\Facades\RecaptchaV3;
 
 class ValidationTest extends TestCase
 {

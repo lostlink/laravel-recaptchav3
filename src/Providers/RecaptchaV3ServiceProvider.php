@@ -5,11 +5,11 @@
  * Mail: josias@montag.info
  */
 
-namespace LostLink\RecaptchaV3\Providers;
+namespace Lostlink\RecaptchaV3\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use LostLink\RecaptchaV3\RecaptchaV3;
-use LostLink\RecaptchaV3\Facades\RecaptchaV3 as RecaptchaV3Facade;
+use Lostlink\RecaptchaV3\RecaptchaV3;
+use Lostlink\RecaptchaV3\Facades\RecaptchaV3 as RecaptchaV3Facade;
 
 class RecaptchaV3ServiceProvider extends ServiceProvider
 {

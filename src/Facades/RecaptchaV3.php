@@ -5,11 +5,11 @@
  * Mail: josias@montag.info
  */
 
-namespace LostLink\RecaptchaV3\Facades;
+namespace Lostlink\RecaptchaV3\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
-use LostLink\RecaptchaV3\RecaptchaV3 as RecaptchaV3Instance;
+use Lostlink\RecaptchaV3\RecaptchaV3 as RecaptchaV3Instance;
 
 class RecaptchaV3 extends Facade
 {
