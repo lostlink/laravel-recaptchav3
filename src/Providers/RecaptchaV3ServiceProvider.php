@@ -9,7 +9,7 @@ namespace LostLink\RecaptchaV3\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use LostLink\RecaptchaV3\RecaptchaV3;
-use Loslink\RecaptchaV3\Facades\RecaptchaV3 as RecaptchaV3Facade;
+use LostLink\RecaptchaV3\Facades\RecaptchaV3 as RecaptchaV3Facade;
 
 class RecaptchaV3ServiceProvider extends ServiceProvider
 {

@@ -6,12 +6,12 @@
  */
 
 
-namespace Lostlink\RecaptchaV3\Tests\Integration;
+namespace LostLink\RecaptchaV3\Tests\Integration;
 
 
 
-use Lostlink\RecaptchaV3\Facades\RecaptchaV3;
-use Lostlink\RecaptchaV3\Tests\TestCase;
+use LostLink\RecaptchaV3\Facades\RecaptchaV3;
+use LostLink\RecaptchaV3\Tests\TestCase;
 
 
 

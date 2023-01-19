@@ -9,7 +9,7 @@ namespace LostLink\RecaptchaV3\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
-use Lostlink\RecaptchaV3\RecaptchaV3 as RecaptchaV3Instance;
+use LostLink\RecaptchaV3\RecaptchaV3 as RecaptchaV3Instance;
 
 class RecaptchaV3 extends Facade
 {
